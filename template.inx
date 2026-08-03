@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<inkscape-extension xmlns="http://www.inkscape.org/namespace/inkscape/extension">
+
+	<name>Normalize SVG (1000x1000)</name>
+
+	<id>de.fo-nttax.normalize-svg</id>
+
+	<dependency type="executable" location="extensions">src/main.py</dependency>
+	<!-- <dependency type="executable" location="extensions">inkex.py</dependency> -->
+
+	<effect>
+		<object-type>all</object-type>
+		<effects-menu>
+
+			<submenu name="Modify Path"/>
+
+		</effects-menu>
+	</effect>
+	<script>
+		<command location="inx" interpreter="python">src/main.py</command>
+	</script>
+</inkscape-extension>
