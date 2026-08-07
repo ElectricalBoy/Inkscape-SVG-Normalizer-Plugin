@@ -202,10 +202,10 @@ class NormalizeSvg(inkex.EffectExtension):
         # Bounding box
         # --------------------------------------------------
 
-        xmin = float("inf")
-        ymin = float("inf")
-        xmax = float("-inf")
-        ymax = float("-inf")
+        xmin = math.inf
+        ymin = math.inf
+        xmax = -math.inf
+        ymax = -math.inf
 
         for s in shapes:
             bx1, by1, bx2, by2 = get_stroke_expanded_bounds(s)
